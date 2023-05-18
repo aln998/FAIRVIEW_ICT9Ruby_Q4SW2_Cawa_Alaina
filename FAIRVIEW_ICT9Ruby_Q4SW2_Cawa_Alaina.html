@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Seatwork 2</title>
+</head>
+<body>
+	<style type="text/css">
+	 body{
+        background: url(bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+   </style>
+<br>
+<br>
+<br>
+<p style="text-align: center"><img src="1.png"></p>
+<h1 style="text-align: center"><font style="font-size: 75px">Time Converter</font></h1>
+<p style="text-align: center"><font style="font-size: 35px">convert seconds, minutes, hours, and even days!</font></p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+	<div class="container-fluid">
+	<table class="table table-striped table-bordered table-hover table-condensed" align="center">
+		<tr align="center">
+			<td>
+				<ul style="text-align: center; color: #4A2020"><h5><font style="font-size: 40px">Seconds</font></ul>
+			<ul style="text-align">
+					<input type="number" id="a1"></ul>
+					<input type="button" class="btn btn-light" onClick="sectomin()" value="To Minutes">
+					<input type="button" class="btn btn-light" onClick="sectohr()" value="To Hours">
+					<input type="button" class="btn btn-light" onClick="sectoday()" value="To Days">
+	    	</td>
+	    </tr>
+	    <tr align="center">
+			<td>
+				<ul style="text-align: center; color: #4A2020"><h5><font style="font-size: 40px">Minutes</font></ul>
+			<ul style="text-align">
+					<input type="number" id="a2"></ul>
+					<input type="button" class="btn btn-light" onClick="mintosec()" value="To Seconds">
+					<input type="button" class="btn btn-light" onClick="mintohr()" value="To Hours">
+					<input type="button" class="btn btn-light" onClick="mintoday()" value="To Days">
+			</td>
+		</tr>
+		<tr align="center">
+			<td>
+				<ul style="text-align: center; color: #4A2020"><h5><font style="font-size: 40px">Hours</font></ul>
+			<ul style="text-align">
+					<input type="number" id="a3"></ul>
+					<input type="button" class="btn btn-light" onClick="hrtosec()" value="To Seconds">
+					<input type="button" class="btn btn-light" onClick="hrtomin()" value="To Minutes">
+					<input type="button" class="btn btn-light" onClick="hrtoday()" value="To Days">
+			</td>
+		</tr>
+		<tr align="center">
+			<td>
+				<ul style="text-align: center; color: #4A2020"><h5><font style="font-size: 40px">Days</font></ul>
+			<ul style="text-align">
+					<input type="number" id="a4"></ul>
+					<input type="button" class="btn btn-light" onClick="daytosec()" value="To Seconds">
+					<input type="button" class="btn btn-light" onClick="daytomin()" value="To Minutes">
+					<input type="button" class="btn btn-light" onClick="daytohr()" value="To Hours">
+			</td>
+			</tr>
+	</table>
+<br>
+<br>
+<br>
+<br>
+<p style="text-align: center"><img src="2.png"></p>
+<br>
+<br>
+<br>
+<br>
+	</div>
+	<script type="text/javascript">
+		/*Seconds*/
+			function sectomin(){
+				var x, y
+				x = (document.getElementById('a1').value);
+				y = 60;
+				alert(x / y);
+			}
+			function sectohr(){
+				var x, y
+				x = (document.getElementById('a1').value);
+				y = 3600;
+				alert(x / y);
+			}
+			function sectoday(){
+				var x, y
+				x = (document.getElementById('a1').value);
+				y = 86400;
+				alert(x / y);
+			}
+		/*Minutes*/
+			function mintosec(){
+				var x, y
+				x = (document.getElementById('a2').value);
+				y = 60;
+				alert(x * y);
+			}
+			function mintohr(){
+				var x, y
+				x = (document.getElementById('a2').value);
+				y = 60;
+				alert(x / y);
+			}
+			function mintoday(){
+				var x, y
+				x = (document.getElementById('a2').value);
+				y = 1400;
+				alert(x / y);
+			}
+		/*Hours*/
+			function hrtosec(){
+				var x, y
+				x = (document.getElementById('a3').value);
+				y = 3600;
+				alert(x * y);
+			}
+			function hrtomin(){
+				var x, y
+				x = (document.getElementById('a3').value);
+				y = 60;
+				alert(x * y);
+			}
+			function hrtoday(){
+				var x, y
+				x = (document.getElementById('a3').value);
+				y = 24;
+				alert(x / y);
+			}
+		/*Days*/
+			function daytosec(){
+				var x, y
+				x = (document.getElementById('a4').value);
+				y = 86400;
+				alert(x * y);
+			}
+			function daytomin(){
+				var x, y
+				x = (document.getElementById('a4').value);
+				y = 1440;
+				alert(x * y);
+			}
+			function daytohr(){
+				var x, y
+				x = (document.getElementById('a4').value);
+				y = 24;
+				alert(x * y);
+			}
+	</script>
+</body>
+</html>
